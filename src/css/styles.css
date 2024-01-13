@@ -16,17 +16,21 @@
 @import url('./styles.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --basic: #ffffff;
+  --accent: #0c00f1;
+  --scondary: #fff9f9;
+  --main: #000000;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+body {
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
