@@ -1,9 +1,24 @@
-.about .title {
+.about {
+  padding: 120px 0;
+}
+
+.about > .bg {
+  background-color: var(--section-second-bg);
+}
+
+.about .container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about .headline {
+  display: inline-block;
   margin-bottom: 8px;
 
   color: var(--basic);
-  background-color: #000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--main);
+  text-shadow: var(--text-shadow);
   font-family: Montserrat;
   font-size: 42px;
   font-style: normal;

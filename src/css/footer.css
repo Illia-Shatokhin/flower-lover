@@ -1,0 +1,86 @@
+.footer {
+  padding: 120px 0;
+  background-color: var(--accent);
+  /* background-color: gray; */
+}
+
+.footer .container {
+  display: flex;
+}
+
+.navigation {
+  margin-right: 246px;
+}
+
+.navigation li + li {
+  margin-top: 23px;
+}
+
+.navigation a {
+  color: var(--basic);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.navigation a:hover {
+  color: var(--main);
+}
+
+.footer .headline {
+  width: 230px;
+  color: var(--basic);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 108.333% */
+  margin-bottom: 20px;
+}
+
+.footer .center {
+  margin-right: 155px;
+}
+
+.footer .btn {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--basic);
+  color: var(--main);
+}
+
+.footer .btn:hover,
+.footer .btn:focus {
+  background-color: var(--main);
+  color: var(--basic);
+}
+
+.footer .wrap .text {
+  margin-bottom: 16px;
+  color: var(--basic);
+  font-family: Montserrat;
+  font-size: 15.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: calc(24 / 15.5);
+  letter-spacing: 0.5px;
+}
+
+.footer address {
+  margin-bottom: 16px;
+
+  color: var(--basic);
+  font-family: Montserrat;
+  font-size: 15.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: calc(24 / 15.5);
+  letter-spacing: 0.5px;
+}
+
+.footer address a {
+  text-decoration: underline;
+}

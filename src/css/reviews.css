@@ -1,0 +1,44 @@
+.reviews {
+  padding: 120px 0;
+  background-color: grey;
+}
+
+.reviews .title {
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+
+.reviews .slider {
+  display: flex;
+  gap: 30px;
+}
+
+.reviews .slider .wrap {
+  width: 255px;
+  height: 300px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--accent-opacity);
+}
+
+.reviews .text {
+  color: var(--basic);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.reviews .name {
+  color: var(--basic);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
