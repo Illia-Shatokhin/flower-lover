@@ -1,7 +1,6 @@
 .footer {
   padding: 120px 0;
   background-color: var(--accent);
-  /* background-color: gray; */
 }
 
 .footer .container {
@@ -23,10 +22,24 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  transition: color var(--transition);
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:focus {
   color: var(--main);
+}
+
+.navigation svg {
+  fill: var(--basic);
+
+  transition: fill var(--transition);
+}
+
+.navigation svg:hover,
+.navigation svg:focus {
+  fill: var(--main);
 }
 
 .footer .headline {
@@ -37,7 +50,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 108.333% */
+  line-height: 26px;
   margin-bottom: 20px;
 }
 
@@ -50,6 +63,8 @@
   margin: 0 auto;
   background-color: var(--basic);
   color: var(--main);
+
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .footer .btn:hover,
@@ -83,4 +98,30 @@
 
 .footer address a {
   text-decoration: underline;
+
+  transition: color var(--transition);
+}
+
+.footer address a:hover,
+.footer address a:focus {
+  color: var(--main);
+}
+
+#contacts .social {
+  display: flex;
+}
+
+#contacts .social li + li {
+  margin-left: 16px;
+}
+
+.social-link svg {
+  fill: var(--secondary);
+
+  transition: fill var(--transition);
+}
+
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: var(--main);
 }

@@ -1,6 +1,10 @@
 .reviews {
+  max-width: 1460px;
   padding: 120px 0;
-  background-color: grey;
+  margin: 0 auto;
+
+  background: var(--main) url(../img/reviews-bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .reviews .title {

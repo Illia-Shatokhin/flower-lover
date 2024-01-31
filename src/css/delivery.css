@@ -6,7 +6,16 @@
   background-color: #fff;
 }
 
-.delivery .bg > .container {
+.delivery .bg-img {
+  max-width: 1460px;
+  margin: 0 auto;
+  background-image: url(../img/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.delivery .bg .container {
   padding: 120px 0;
   background-color: var(--section-second-bg);
 }
@@ -89,4 +98,11 @@
 
 .delivery .desc a {
   text-decoration: underline;
+
+  transition: color var(--transition);
+}
+
+.delivery .desc a:hover,
+.delivery .desc a:focus {
+  color: var(--accent);
 }

@@ -1,12 +1,36 @@
 .hero {
-  padding: 240px 0;
+  position: relative;
+  z-index: 1;
+  padding: 200px 0;
+
+  background-color: var(--main);
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1460px;
+  margin: 0 auto;
 }
 
-.hero .header {
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  top: 84px;
+  left: 375px;
+
+  width: 710px;
+  height: 710px;
+
+  content: '';
+  display: block;
+  background-color: var(--title-bg);
+  border-radius: 50%;
+}
+
+.hero-header {
   margin: 0 auto 40px;
   max-width: 520px;
-  color: var(--scondary);
-  background-color: #000;
+  color: var(--secondary);
   text-align: center;
   font-family: Montserrat;
   font-size: 28px;
@@ -16,7 +40,8 @@
 }
 
 .hero .logo {
-  margin-bottom: 40px;
+  position: relative;
+  margin-bottom: 65px;
   text-align: center;
   color: var(--basic);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.65);
@@ -28,6 +53,11 @@
 }
 
 .hero .logo-lover {
+  position: absolute;
+  top: 60px;
+  left: 400px;
+  z-index: 1;
+
   color: var(--accent);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
   font-family: Dancing Script;
@@ -43,7 +73,7 @@
   padding: 18px 32px;
   border: none;
   border-radius: 25px;
-  background-color: var(--scondary);
+  background-color: var(--secondary);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   color: var(--accent);
@@ -53,6 +83,7 @@
   font-weight: 700;
   line-height: calc(24 / 18);
   letter-spacing: 0.5px;
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .hero .btn:hover,

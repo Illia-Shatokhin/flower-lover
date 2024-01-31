@@ -1,7 +1,28 @@
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header .logo {
+  padding: 25px 0;
+}
+
+.logo-icon {
+  fill: var(--logo);
+
+  transition: fill var(--transition);
+}
+
+.logo:hover .logo-icon,
+.logo:focus .logo-icon {
+  fill: var(--accent);
 }
 
 .header .wrap {
@@ -21,12 +42,13 @@
 }
 
 .header .link {
-  background-color: #000;
   color: var(--basic);
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
+
+  transition: color var(--transition);
 }
 
 .header .link:hover,
@@ -48,13 +70,12 @@
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.5px;
+
+  transition: background-color var(--transition), color var(--transition);
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--secondary);
   color: var(--accent);
-}
-
-.logo {
 }

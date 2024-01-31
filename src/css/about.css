@@ -1,5 +1,10 @@
 .about {
   padding: 120px 0;
+  max-width: 1460px;
+  margin: 0 auto;
+
+  background: var(--section-second-bg) url(../img/about-bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .about > .bg {
@@ -10,6 +15,30 @@
   display: flex;
   gap: 30px;
   align-items: center;
+  position: relative;
+}
+
+.about img {
+  position: relative;
+  z-index: 2;
+}
+
+.about .container::after {
+  position: absolute;
+  z-index: 1;
+  top: 54px;
+  left: 533px;
+  content: '';
+  display: block;
+  width: 620px;
+  height: 620px;
+  border-radius: 50%;
+  background-color: var(--title-bg);
+}
+
+.about .wrap {
+  position: relative;
+  z-index: 2;
 }
 
 .about .headline {
@@ -17,7 +46,6 @@
   margin-bottom: 8px;
 
   color: var(--basic);
-  background-color: var(--main);
   text-shadow: var(--text-shadow);
   font-family: Montserrat;
   font-size: 42px;
